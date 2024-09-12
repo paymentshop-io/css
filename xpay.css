@@ -1,61 +1,65 @@
 body {
-    background-color: #f0f8f4; /* Light green background */
+    background-color: #f4f7f6; /* Light grey background */
+    font-family: Arial, sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     margin: 0;
-    font-family: Arial, sans-serif;
 }
 
 .container {
     background: white;
-    padding: 20px;
-    border-radius: 10px;
+    padding: 30px;
+    border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     width: 100%;
-    max-width: 500px;
+    max-width: 400px;
 }
 
 h1 {
     text-align: center;
-    color: #4caf50; /* Green color */
+    color: #333;
+    margin-bottom: 20px;
 }
 
-.section {
-    margin-bottom: 15px;
+.form-group {
+    margin-bottom: 20px;
 }
 
 label {
     display: block;
-    margin-bottom: 5px;
-    color: #333;
+    margin-bottom: 8px;
+    color: #666;
+    font-weight: bold;
 }
 
 input {
     width: 100%;
     padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
     box-sizing: border-box;
 }
 
 input:focus {
-    border-color: #4caf50; /* Green border on focus */
+    border-color: #007bff; /* Blue border on focus */
     outline: none;
 }
 
 button {
-    background-color: #4caf50; /* Green background */
+    background-color: #007bff; /* Blue background */
     color: white;
     border: none;
     padding: 15px;
     width: 100%;
-    border-radius: 5px;
+    border-radius: 4px;
     cursor: pointer;
     font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
 }
 
 button:hover {
-    background-color: #45a049; /* Darker green on hover */
+    background-color: #0056b3; /* Darker blue on hover */
 }
