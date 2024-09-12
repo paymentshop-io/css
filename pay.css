@@ -1,22 +1,26 @@
 body {
-    background-color: #f0f9ff; /* Light blue background for vibrancy */
+    background-color: #e0f7e9; /* Light green background */
     width: 100%;
     overflow-x: hidden;
     overflow-y: scroll;
     margin: 0;
+    display: flex;
+    justify-content: center; /* Center content horizontally */
 }
 
 .section {
-    background: linear-gradient(135deg, #f6d365 0%, #fda085 100%); /* Gradient background */
+    background: linear-gradient(135deg, #a8e063 0%, #56ab2f 100%); /* Green gradient background */
     color: #fff; /* White text for contrast */
     margin: 20px 15px;
     padding: 20px 15px;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Stronger shadow for more depth */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Strong shadow */
+    max-width: 600px; /* Reducing width */
+    width: 100%;
 }
 
 h3 {
-    color: #ff6f61; /* Bright coral heading */
+    color: #2c6e49; /* Dark green heading */
     font-size: 18px; /* Slightly larger font */
     margin-bottom: 10px;
 }
@@ -24,18 +28,18 @@ h3 {
 hr {
     margin-top: 0;
     margin-bottom: 20px;
-    border-color: #ff6f61; /* Coral color for divider */
+    border-color: #2c6e49; /* Dark green for divider */
 }
 
 p {
     font-size: small;
     margin: 0;
-    color: #ffe9e4; /* Light coral text */
+    color: #dff2d8; /* Light green text */
 }
 
 input {
-    border-color: #ff9a76; /* Bright orange border */
-    background-color: #fff5f0; /* Soft light orange background */
+    border-color: #6cc070; /* Soft green border */
+    background-color: #f2fff3; /* Very light green background */
     width: 100%;
     border-style: solid;
     border-width: 2px;
@@ -45,13 +49,13 @@ input {
 }
 
 input:focus {
-    border-color: #f093fb; /* Color changes to pink when focused */
-    background-color: #f0f9ff; /* Light blue focus background */
+    border-color: #41b883; /* Bright green when focused */
+    background-color: #e0f7e9; /* Matching the body background */
     outline: none;
 }
 
 label {
-    color: #ff6f61; /* Coral color for labels */
+    color: #41b883; /* Bright green for labels */
     font-weight: bold;
     font-size: small;
     display: block;
@@ -66,16 +70,16 @@ button {
     margin: 15px;
     width: 95%;
     color: white;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); /* Gradient button */
-    height: 55px;
+    background: linear-gradient(135deg, #43a047 0%, #66bb6a 100%); /* Green gradient button */
+    height: 50px;
     font-weight: bolder;
     border-style: none;
     font-size: 16px;
-    border-radius: 8px; /* More rounded corners for the button */
+    border-radius: 8px; /* Rounded button corners */
 }
 
 button.disabled {
-    background-color: #b7a7d6; /* Light purple for disabled state */
+    background-color: #98d3a7; /* Light green for disabled state */
     font-weight: normal;
 }
 
@@ -121,6 +125,6 @@ svg {
 #error-message {
     display: none;
     margin-top: 20px;
-    color: #ff6f61; /* Coral color for error message */
+    color: #d32f2f; /* Red for error message */
     font-weight: bold;
 }
