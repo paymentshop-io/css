@@ -14,7 +14,7 @@ body {
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     width: 100%;
-    max-width: 400px;
+    max-width: 600px; /* Wider container */
 }
 
 h1 {
@@ -24,7 +24,7 @@ h1 {
 }
 
 .form-group {
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
 label {
@@ -62,4 +62,15 @@ button {
 
 button:hover {
     background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Grid layout for card details */
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr; /* Adjust number of columns as needed */
+    gap: 10px;
+}
+
+.grid-container .form-group {
+    margin-bottom: 0; /* Remove margin for grid items */
 }
