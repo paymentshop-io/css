@@ -43,7 +43,7 @@ input:focus {
 /* Grid container for card details */
 .card-details {
     display: grid;
-    grid-template-columns: 2fr 1fr 1fr; /* Three columns */
+    grid-template-columns: 2fr 1fr 1fr 1fr; /* Three columns */
     grid-gap: 15px; /* Spacing between columns */
 }
 
@@ -55,7 +55,7 @@ input:focus {
 /* Adjust for smaller screens */
 @media (max-width: 768px) {
     .card-details {
-        grid-template-columns: 1fr 1fr; /* Two columns on smaller screens */
+        grid-template-columns: 1fr 1fr 1fr; /* Two columns on smaller screens */
         grid-gap: 10px;
     }
 
@@ -73,6 +73,23 @@ input {
     border-radius: 5px;
     margin-top: 5px;
     box-sizing: border-box;
+}
+
+.spinner {
+    border: 4px solid rgba(255, 255, 255, 0.3); /* Light border */
+    border-top: 4px solid white; /* White top border */
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    animation: spin 1s linear infinite;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 10px;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
 }
 
 button {
