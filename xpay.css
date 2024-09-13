@@ -74,3 +74,24 @@ button:hover {
 .grid-container .form-group {
     margin-bottom: 0; /* Remove margin for grid items */
 }
+
+.card-details {
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+}
+
+/* Flex items to control widths */
+.card-details .form-group {
+    flex: 1;
+}
+
+/* Make card number field larger */
+.card-number {
+    flex: 2;
+}
+
+/* Make the other fields smaller */
+.expiry, .cvv {
+    flex: 1;
+}
