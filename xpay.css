@@ -15,6 +15,7 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     width: 100%;
     max-width: 600px; /* Wider container */
+    box-sizing: border-box; /* Ensures padding doesn't affect width */
 }
 
 h1 {
@@ -42,16 +43,28 @@ input:focus {
 /* Grid container for card details */
 .card-details {
     display: grid;
-    grid-template-columns: 2fr 1fr 1fr 1fr;
-    gap: 10px;
+    grid-template-columns: 2fr 1fr 1fr; /* Three columns */
+    grid-gap: 15px; /* Spacing between columns */
 }
 
-.form-group {
-    display: flex;
-    flex-direction: column;
+/* Ensure grid items take full height within the grid cells */
+.card-details .form-group {
+    margin-bottom: 0;
 }
 
-/* Make form input fields take full width */
+/* Adjust for smaller screens */
+@media (max-width: 768px) {
+    .card-details {
+        grid-template-columns: 1fr 1fr; /* Two columns on smaller screens */
+        grid-gap: 10px;
+    }
+
+    /* Full-width for smaller screens */
+    .form-group {
+        grid-column: span 2;
+    }
+}
+
 input {
     width: 100%;
     padding: 10px;
@@ -59,6 +72,7 @@ input {
     border: 1px solid #ccc;
     border-radius: 5px;
     margin-top: 5px;
+    box-sizing: border-box;
 }
 
 button {
