@@ -39,17 +39,6 @@ input:focus {
     outline: none;
 }
 
-/* Grid layout for card details */
-.grid-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr; /* Adjust number of columns as needed */
-    gap: 10px;
-}
-
-.grid-container .form-group {
-    margin-bottom: 0; /* Remove margin for grid items */
-}
-
 /* Grid container for card details */
 .card-details {
     display: grid;
